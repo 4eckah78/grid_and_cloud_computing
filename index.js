@@ -7,7 +7,7 @@ const port = 3000
 MONGO_URLS = {
     'local':'mongodb://localhost:27017/TestDatabase', 
     //'docker': 'mongo://mongo:27017',
-    'cloud': 'mongodb+srv://4eckah78:admin@gridandcloud.s5hqu.mongodb.net/MyFirstDatabase?retryWrites=true&w=majority'
+    'cloud': 'SECRET'
 }
 
 MONGO_DBS = []
