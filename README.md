@@ -39,7 +39,7 @@ A random generator generates objects like that:
 ```bash
 name: "Gosha1",
 patronymic: "Olegovich8",
-company: "OOO Mouse and Banana 23" + rand3,
+company: "OOO Mouse and Banana 23",
 cat_guy: 1,
 email: `gosha@gmail5.com`,
 ``` 
