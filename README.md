@@ -6,16 +6,16 @@
 
 ### Demo
 
-To watch a short demo (6:26 minutes) you can use the following link:
+To watch a short **demo** (6:26 minutes) you can use the following link:
 
 https://youtu.be/WQf3D2zHAdM
 
 ------------------------------
 
 ### Stack
-Server - Node.js + Express
+Server - **Node.js** + **Express**
 
-Database - MongoDB
+Database - **MongoDB**
 
 ------------------------------
 
@@ -35,7 +35,7 @@ Fields:
 ------------------------------
 ### Object generator
 
-A random generator generates objects like that:
+A **random generator** generates objects like that:
 ```bash
 name: "Gosha1",
 patronymic: "Olegovich8",
@@ -57,13 +57,13 @@ docker run -d -p 27018:27017 --name my-mongo mongo:latest
 
 ### Server
 
-Server starts on port 3000 with the following command:
+Server starts **on port 3000** with the following command:
 
 ```bash
 node index.js
 ```
 
-Then it connects to local database (on port 27017), to docker database (on port 27018) and to cloud database
+Then it connects to **local database** (on port 27017), to **docker database** (on port 27018) and to **cloud database**
 
 After you see in the console these lines:
 
@@ -80,14 +80,14 @@ You can open in the browser ```localhost:3000``` and start using this app
 
 ### Endpoints
 
-Server has 3 endpoints, all accepting only GET requests:
-- /create - creates randomly generated object and writes it to all three databases and displays in console an object and timings for each database
-- /find - finds all objects in all three databases and displays in console timings for each database
-- /deleteall - deletes all objects in all three databases and displays  in console timings for each database
+Server has 3 endpoints, all accepting **only GET requests**:
+- ```/create``` - creates randomly generated object, writes it to all three databases and displays in console an object and timings for each database
+- ```/find``` - finds all objects in all three databases and displays in console timings for each database
+- ```/deleteall``` - deletes all objects in all three databases and displays  in console timings for each database
 
 -----------------------------
 ### Example
-The examples of console outputs with the timings for different operations (creating, getting and deleting) you can see below:
+The examples of console outputs with the timings for different operations (**creating**, **getting** and **deleting**) you can see below:
 
 
     CREATING
@@ -282,18 +282,19 @@ The examples of console outputs with the timings for different operations (creat
 
 ### Сonclusion
 
-As you can see from the example above, in all three types of operations the local database takes first placе, the docker database takes the second and on the last place goes slowly the cloud database. Although, sometimes local and docker databases are going nose to nose, e.g. in creating a nice fellow named Gosha4 Olegovich4 working in 'OOO Mouse and Banana 84', who is a cat-guy:
+- As you can see from the example above, in all three types of operations the **local database** takes first placе, the **docker database** takes the second and on the last place goes slowly the **cloud database**. 
+- Although, sometimes local and docker databases are going nose to nose, e.g. in creating a nice fellow named Gosha4 Olegovich4 working in 'OOO Mouse and Banana 84', who is a cat-guy:
 
-    ---------------------------------------
-    CREATING
-    Creating an user object:  {
-        name: 'Gosha4',
-        patronymic: 'Olegovich4',
-        company: 'OOO Mouse and Banana 84',
-        cat_guy: 1,
-        email: 'gosha@gmail2.com'
-    }
-    Time of creating an object in local database: 20 ms
-    Time of creating an object in docker database: 20 ms
-    Time of creating an object in cloud database: 74 ms
-    ---------------------------------------
+        ---------------------------------------
+        CREATING
+        Creating an user object:  {
+            name: 'Gosha4',
+            patronymic: 'Olegovich4',
+            company: 'OOO Mouse and Banana 84',
+            cat_guy: 1,
+            email: 'gosha@gmail2.com'
+        }
+        Time of creating an object in local database: 20 ms
+        Time of creating an object in docker database: 20 ms
+        Time of creating an object in cloud database: 74 ms
+        ---------------------------------------
